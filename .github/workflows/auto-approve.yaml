@@ -12,7 +12,7 @@ jobs:
     if: github.event.label.name == 'auto-approve'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb6c3799c0c8c
+      - uses: actions/github-script@v7
         with:
           script: |
             await github.rest.pulls.createReview({
