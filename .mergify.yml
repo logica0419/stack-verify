@@ -1,6 +1,13 @@
 merge_protections_settings:
   auto_merge_conditions: true
 
+pull_request_rules:
+  - name: auto queue on label
+    conditions:
+      - label = queue-me
+    actions:
+      queue:
+
 queue_rules:
   - name: default
     merge_method: merge
