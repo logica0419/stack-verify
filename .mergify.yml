@@ -2,4 +2,4 @@ queue_rules:
   - name: default
     merge_method: merge
     queue_conditions:
-      - base = main
+      - check-success = Summary
